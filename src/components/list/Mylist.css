@@ -1,0 +1,199 @@
+.mylist {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0 0.5);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mylist__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: var(--body-color);
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.mylist__header h2 {
+  color: var(--title-color-dark);
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-bold);
+  margin-left: 10px;
+}
+.mylist__header button {
+  background: none;
+  border: none;
+  color: var(--title-color-dark);
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-bold);
+  margin-right: 10px;
+  cursor: pointer;
+}
+.mylist__header button i {
+  font-size: var(--medium-font-size);
+}
+.mylist__container-overlay {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: var(--body-color);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mylist__content {
+  border-radius: 10px;
+  background-color: var(--body-color);
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.mylist__content::-webkit-scrollbar {
+  width: 10px;
+}
+.mylist__content::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+.mylist__content::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+.moovie__card-info-list-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.moovie__list-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.moovie__list-card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.moovie__card-list-hd {
+  /* Card tag top right*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #00acc1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 0 10px;
+  color: var(--title-color-dark);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-normal);
+  z-index: 1;
+}
+/* Remove buttom */
+.moovie__card-footer-info-rm {
+  width: 30px;
+  height: 30px;
+  background: #f44336;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--title-color-dark);
+  font-size: var(--meduim-font-size);
+  font-weight: var(--font-normal);
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+.moovie__card-footer-info-rm:hover {
+  background: #d32f2f;
+}
+.moovie__card-info-list-overlay:hover {
+  opacity: 1;
+}
+
+.moovie__card-list-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+}
+
+.mylist__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  color: var(--title-color-dark);
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-bold);
+  margin: 10px;
+}

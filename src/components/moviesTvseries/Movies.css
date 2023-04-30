@@ -1,0 +1,461 @@
+/* ====== Movie Container ======  */
+.moovies__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* ====== Movie Hero ======  */
+.moovies__hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.carousel__hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.moovies__hero-title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+.moovies__hero-info {
+  /* left side */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 40px;
+  /* background to right  */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 10%, transparent 100%);
+}
+.moovies__hero-description {
+  /* all aligned  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: var(--mb-1);
+}
+/*====== Progress  ======*/
+.circle-progress {
+  position: relative;
+  top: -10%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moovies__hero-type-tag-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 5px solid var(--main-color);
+  padding: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 50%, transparent 100%);
+  border-radius: 5px 0 0 5px;
+}
+.moovies__hero-type-tag-container span {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+.circle-progress__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.circle-progress__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+/* rate */
+.hero-rating {
+  font-weight: var(--font-semi-bold) !important;
+  color: var(--title-color) !important;
+}
+.moovies__hero-tag i {
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: var(--normal-font-size);
+  color: #f1c40f;
+}
+.moovies__hero-tag {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  color: var(--title-color);
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.moovies__hero-hd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--tiny-font-size);
+  font-weight: 400;
+  width: 40px;
+  height: 20px;
+  padding: 0px 5px;
+  color: var(--title-color-dark);
+  margin-bottom: var(--mb-1);
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.moovies__hero-date {
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  color: var(--title-color-dark);
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.moovies__hero-overview {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--title-color-dark);
+  margin-bottom: 10px;
+}
+.moovies__hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  position: relative;
+}
+.moovies__hero-buttons .button--hero-2 {
+  margin-left: 10px;
+}
+.btn-hero {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-hero:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.button--hero-1 {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button--hero-2 {
+  border: 1px solid var(--title-color-dark);
+  color: var(--title-color-dark);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button--hero-1:hover {
+  background-color: var(--main-color);
+  color: var(--title-color-dark);
+}
+.button--hero-2:hover {
+  background-color: var(--title-color-dark);
+  color: var(--body-color);
+}
+/* ====== Movie Modal Video ======  */
+.Youtube-container {
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+}
+.button--close {
+  position: absolute;
+  text-align: center;
+  background-color: var(--main-color);
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.button--close:hover {
+  transform: scale(1.2);
+}
+.button--close i {
+  font-size: var(--h2-font-size);
+  color: var(--title-color-dark);
+  margin: 0;
+  padding: 0;
+}
+.moovies__hero-companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--mb-1);
+}
+
+.moovies__hero-genre-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--mb-1);
+}
+.moovies__hero-genre-list span {
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  color: var(--title-color-dark);
+  margin-right: 10px;
+  border: 1px solid var(--title-color-dark);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* ====== Movie Card ======  */
+.moovie__card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.moovie__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.moovie__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.moovie__card-hd {
+  /* Card tag top right*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #00acc1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 0 10px;
+  color: var(--title-color-dark);
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-normal);
+  z-index: 1;
+}
+
+.moovie__card-info-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.moovie__card:hover .moovie__card-info-overlay {
+  opacity: 1;
+}
+.moovie__card-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.feather-play {
+  color: var(--title-color-dark);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  background-color: #00acc1;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.moovie__card:hover .feather-play {
+  transform: scale(1.2);
+  background-color: #00acc1;
+}
+.moovie__card-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+}
+.moovie__card-footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.feather-star {
+  color: #00acc1;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.feather-plus {
+  color: #00acc1;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.moovie__card:hover .feather-plus {
+  transform: scale(1.2);
+  color: #00acc1;
+}
+.moovie__card-footer-info-rating {
+  color: var(--title-color-dark);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-normal);
+}
+.feather-calendar {
+  color: #00acc1;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.moovie__card-footer-info-date {
+  color: var(--title-color-dark);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-normal);
+  margin-right: 10px;
+}
+.moovie__card-footer-info-type {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--tiny-font-size);
+  margin-left: 10px;
+  padding: 5px 5px;
+  border: #00acc1 1px solid;
+  border-radius: 5px;
+}
+/* ========== Media query ==========  */
+@media (max-width: 768px) {
+  .moovies__hero {
+    top: -30px;
+    height: 600px;
+  }
+  .moovies__hero-info {
+    width: 100%;
+    padding: 20px 40px;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.2)
+    );
+  }
+  .moovies__hero-title {
+    font-size: 3rem;
+  }
+  .moovies__hero-date {
+    font-size: 1.2rem;
+  }
+  .moovies__hero-overview {
+    font-size: 1.5rem;
+  }
+  .moovies__hero-buttons {
+    margin-top: 30px;
+  }
+
+  .moovie__card {
+    width: 250px;
+    height: 350px;
+  }
+
+  .moovie__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .moovie__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
