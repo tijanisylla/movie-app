@@ -48,24 +48,34 @@ const AllMovies: FC = () => {
     id: number,
     type: string
   ): Promise<void> => {
-    const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${type}/${id}`,
-      {
+    try {
+      const { data } = await axios.get(`${API_URL}/${type}/${id}`, {
         params: {
           api_key: process.env.REACT_APP_API_KEY,
           language: "en-US",
         },
+      });
+      setSelectedMovie(data);
+    } catch (err: any) {
+      if (err) {
+        alert("Something went wrong");
+        throw new Error(err);
       }
-    );
-    setSelectedMovie(data);
+    }
   };
 
   // Select movie by id
   const selectMovieById = async (mov: any): Promise<any> => {
-    if (currentFilter === "TV Shows") {
-      fetchMovieOrTvById(mov.id, "tv");
-    } else {
-      fetchMovieOrTvById(mov.id, "movie");
+    try {
+      if (currentFilter === "TV Shows") {
+        fetchMovieOrTvById(mov.id, "tv");
+      } else {
+        fetchMovieOrTvById(mov.id, "movie");
+      }
+    } catch (err: any) {
+      if (err) {
+        throw new Error(err);
+      }
     }
   };
 
