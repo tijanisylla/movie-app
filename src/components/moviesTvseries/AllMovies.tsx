@@ -21,7 +21,6 @@ const AllMovies: FC = () => {
         params: {
           api_key: "3da275bf12ccf72038f506c6228b9293",
           language: "en-US",
-
           page: currentPage,
           with_genres: withGenre,
         },
