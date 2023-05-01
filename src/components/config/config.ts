@@ -9,7 +9,7 @@ interface TypeConfig {
 }
 
 export const firebaseConfig: TypeConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  apiKey: "AIzaSyBbg8nTUk4Ht0IF7XLzdZpDpeagu3Qi0-Y",
   authDomain: "ai-react-auth.firebaseapp.com",
   projectId: "ai-react-auth",
   storageBucket: "ai-react-auth.appspot.com",
