@@ -258,7 +258,7 @@ const Hero = () => {
           </div>
         </div>
       )}
-      {/* Filter */}
+      {/* Filters  */}
       <Filter />
     </>
   );
