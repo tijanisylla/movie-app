@@ -13,9 +13,12 @@ const Filter: FC = () => {
   // Get genre list
   useEffect(() => {
     axios
-      .get(
-        `https://api.themoviedb.org/3/genre/${typeMovies}/list?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US`
-      )
+      .get(`https://api.themoviedb.org/3/genre/${typeMovies}/list`, {
+        params: {
+          api_key: "3da275bf12ccf72038f506c6228b9293",
+          language: "en-US",
+        },
+      })
       .then((res) => {
         setGenreList(res.data.genres);
       })

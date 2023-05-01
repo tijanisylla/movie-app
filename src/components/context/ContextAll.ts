@@ -27,6 +27,7 @@ interface TypeContext {
   setOpenProfile: (openProfile: boolean) => void;
 
   addToMyList: (id: number) => void;
+  api_key: string;
 }
 
 const contextState: TypeContext = {
@@ -55,6 +56,7 @@ const contextState: TypeContext = {
   openProfile: false,
   setOpenProfile: (openProfile: boolean) => void {},
   addToMyList: (id: number) => void {},
+  api_key: "",
 };
 
 const ContextAll = createContext<TypeContext>(contextState);

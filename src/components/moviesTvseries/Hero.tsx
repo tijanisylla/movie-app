@@ -30,7 +30,7 @@ const Hero = () => {
         }/${selectedMovie?.id}/videos`,
         {
           params: {
-            api_key: process.env.REACT_APP_MOVIE_API_KEY,
+            api_key: "3da275bf12ccf72038f506c6228b9293",
             language: "en-US",
           },
         }

@@ -30,6 +30,9 @@ const App: React.FC = () => {
   const [selectedMovie, setSelectedMovie] = useState<any>(null);
   const [openLogin, setOpenLogin] = useState<boolean>(false);
   const [openProfile, setOpenProfile] = useState<boolean>(false);
+  const api_key =
+    "3da275bf12ccf72038f506c6228b9293" ||
+    (process.env.REACT_APP_MOVIE_API_KEY as string);
 
   useEffect(() => {
     const mylist = localStorage.getItem("myList");
@@ -106,6 +109,7 @@ const App: React.FC = () => {
         openProfile,
         setOpenProfile,
         addToMyList,
+        api_key,
       }}
     >
       <div className="App">
