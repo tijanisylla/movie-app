@@ -24,7 +24,7 @@ const Carousel = () => {
   useEffect(() => {
     // Fetch Movies and Tv at the same time with callback
     const fetchMovies = async () => {
-      const { data } = await axios.get(`${API_URL}/3/discover/movie/`, {
+      const { data } = await axios.get(`${API_URL}/discover/movie/`, {
         params: {
           api_key: "3da275bf12ccf72038f506c6228b9293",
           language: "en-US",
