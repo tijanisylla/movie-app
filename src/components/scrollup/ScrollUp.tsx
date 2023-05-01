@@ -15,7 +15,7 @@ const ScrollUp: FC = () => {
 
   return (
     <a
-      href="/#moovies__hero"
+      href="#moovies__hero"
       // scroll to top
       onClick={() => window.scrollTo(0, 0)}
       style={
