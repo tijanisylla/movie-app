@@ -24,13 +24,9 @@ const Carousel = () => {
   useEffect(() => {
     // Fetch Movies and Tv at the same time with callback
     const fetchMovies = async () => {
-      const { data } = await axios.get(`${API_URL}/discover/movie/`, {
-        params: {
-          api_key: "3da275bf12ccf72038f506c6228b9293",
-          language: "en-US",
-          page: 1,
-        },
-      });
+      const { data } = await axios.get(
+        `${API_URL}/discover/movie?sort_by=popularity.desc&api_key=3da275bf12ccf72038f506c6228b9293&language=en-US&page=1`
+      );
       //10 movies from the array
       setResults(data.results.slice(0, 10));
     };
