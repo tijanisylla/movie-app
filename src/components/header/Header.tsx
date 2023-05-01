@@ -94,7 +94,7 @@ const Header: FC = () => {
         "https://api.themoviedb.org/3/search/multi",
         {
           params: {
-            api_key: process.env.REACT_APP_API_KEY,
+            api_key: process.env.REACT_APP_MOVIE_API_KEY,
             language: "en-US",
             query: searchValue,
             page: 1,
@@ -124,7 +124,7 @@ const Header: FC = () => {
       `https://api.themoviedb.org/3/${type}/${id}`,
       {
         params: {
-          api_key: process.env.REACT_APP_API_KEY,
+          api_key: process.env.REACT_APP_MOVIE_API_KEY,
           language: "en-US",
         },
       }

@@ -14,7 +14,7 @@ const Filter: FC = () => {
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/genre/${typeMovies}/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+        `https://api.themoviedb.org/3/genre/${typeMovies}/list?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US`
       )
       .then((res) => {
         setGenreList(res.data.genres);

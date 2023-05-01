@@ -28,7 +28,7 @@ const Carousel = () => {
         "https://api.themoviedb.org/3/discover/movie/",
         {
           params: {
-            api_key: process.env.REACT_APP_API_KEY,
+            api_key: process.env.REACT_APP_MOVIE_API_KEY,
             language: "en-US",
             page: 1,
           },
@@ -42,7 +42,7 @@ const Carousel = () => {
   const fetchTrailer = async (item: any) => {
     const { data } = await axios.get(`${API_URL}/movie/${item?.id}/videos`, {
       params: {
-        api_key: process.env.REACT_APP_API_KEY,
+        api_key: process.env.REACT_APP_MOVIE_API_KEY,
         language: "en-US",
         page: 1,
       },
@@ -67,7 +67,7 @@ const Carousel = () => {
       `https://api.themoviedb.org/3/${type}/${id}`,
       {
         params: {
-          api_key: process.env.REACT_APP_API_KEY,
+          api_key: process.env.REACT_APP_MOVIE_API_KEY,
           language: "en-US",
         },
       }

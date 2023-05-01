@@ -15,7 +15,7 @@ const Pagination = () => {
       const getTvSeries = async () => {
         const { data } = await axios.get(`${API_URL}/discover/tv`, {
           params: {
-            api_key: process.env.REACT_APP_API_KEY,
+            api_key: process.env.REACT_APP_MOVIE_API_KEY,
           },
         });
         setTotalPages(data.total_pages);
@@ -31,7 +31,7 @@ const Pagination = () => {
       const getMovies = async () => {
         const { data } = await axios.get(`${API_URL}/discover/movie`, {
           params: {
-            api_key: process.env.REACT_APP_API_KEY,
+            api_key: process.env.REACT_APP_MOVIE_API_KEY,
           },
         });
         setTotalPages(data.total_pages);

@@ -19,7 +19,7 @@ const AllMovies: FC = () => {
     const fetchMoviesAndTv = async (callback: Function): Promise<void> => {
       const { data: movieData } = await axios.get(`${API_URL}/discover/movie`, {
         params: {
-          api_key: process.env.REACT_APP_API_KEY,
+          api_key: process.env.REACT_APP_MOVIE_API_KEY,
           language: "en-US",
 
           page: currentPage,
@@ -29,7 +29,7 @@ const AllMovies: FC = () => {
 
       const { data: tvSerieData } = await axios.get(`${API_URL}/discover/tv`, {
         params: {
-          api_key: process.env.REACT_APP_API_KEY,
+          api_key: process.env.REACT_APP_MOVIE_API_KEY,
           language: "en-US",
           page: currentPage,
           with_genres: withGenre,
@@ -51,7 +51,7 @@ const AllMovies: FC = () => {
     try {
       const { data } = await axios.get(`${API_URL}/${type}/${id}`, {
         params: {
-          api_key: process.env.REACT_APP_API_KEY,
+          api_key: process.env.REACT_APP_MOVIE_API_KEY,
           language: "en-US",
         },
       });
