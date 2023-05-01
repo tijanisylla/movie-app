@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/movie-app/static/css/main.f30a4ec4.css",
+    "main.js": "/movie-app/static/js/main.d0ab9776.js",
+    "static/media/sylla-movies-high-resolution-logo-color-on-transparent-background.png": "/movie-app/static/media/sylla-movies-high-resolution-logo-color-on-transparent-background.03f105f2fcf4dc960769.png",
+    "index.html": "/movie-app/index.html",
+    "main.f30a4ec4.css.map": "/movie-app/static/css/main.f30a4ec4.css.map",
+    "main.d0ab9776.js.map": "/movie-app/static/js/main.d0ab9776.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f30a4ec4.css",
+    "static/js/main.d0ab9776.js"
+  ]
+}
