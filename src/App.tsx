@@ -110,16 +110,11 @@ const App: React.FC = () => {
     >
       <div className="App">
         <Header />
-
         <main>
           <AllMovies />
-          {/* <Details /> */}
           <AllList />
         </main>
-
-        {/* <Pagination /> */}
         {loading && <Loading />}
-
         <Login />
         <ScrollUp />
         <Pagination />
