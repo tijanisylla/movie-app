@@ -95,7 +95,7 @@ const Hero = () => {
   };
 
   return (
-    <>
+    <div id="moovies__hero">
       {selectedMovie === null ? (
         <Carousel />
       ) : (
@@ -260,7 +260,7 @@ const Hero = () => {
       )}
       {/* Filters  */}
       <Filter />
-    </>
+    </div>
   );
 };
 export default Hero;

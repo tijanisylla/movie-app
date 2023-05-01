@@ -315,9 +315,10 @@ const Header: FC = () => {
             <li className="nav__item">
               <a
                 className="nav__link"
-                href="/#"
+                href="/#moovies__hero"
                 onClick={() => {
                   setToggle(!Toogle);
+                  window.scrollTo(0, 0);
                 }}
               >
                 Home

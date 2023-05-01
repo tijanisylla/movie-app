@@ -15,7 +15,9 @@ const ScrollUp: FC = () => {
 
   return (
     <a
-      href="/#"
+      href="/#moovies__hero"
+      // scroll to top
+      onClick={() => window.scrollTo(0, 0)}
       style={
         { cursor: "pointer" } as
           | React.HTMLAttributes<HTMLAnchorElement>
