@@ -10,6 +10,7 @@ import {
   ScrollUp,
   Pagination,
   Loading,
+  LowerPagination,
 } from "./components";
 
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -121,7 +122,8 @@ const App: React.FC = () => {
         {loading && <Loading />}
         <Login />
         <ScrollUp />
-        <Pagination />
+        {/* <Pagination /> */}
+        <LowerPagination />
         <Footer />
       </div>
     </ContextAll.Provider>
