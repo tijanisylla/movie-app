@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/movie-app/static/css/main.f30a4ec4.css",
-    "main.js": "/movie-app/static/js/main.5198155d.js",
+    "main.css": "/movie-app/static/css/main.8bf94b12.css",
+    "main.js": "/movie-app/static/js/main.8b2ae8f3.js",
     "static/media/sylla-movies-high-resolution-logo-color-on-transparent-background.png": "/movie-app/static/media/sylla-movies-high-resolution-logo-color-on-transparent-background.03f105f2fcf4dc960769.png",
     "index.html": "/movie-app/index.html",
-    "main.f30a4ec4.css.map": "/movie-app/static/css/main.f30a4ec4.css.map",
-    "main.5198155d.js.map": "/movie-app/static/js/main.5198155d.js.map"
+    "main.8bf94b12.css.map": "/movie-app/static/css/main.8bf94b12.css.map",
+    "main.8b2ae8f3.js.map": "/movie-app/static/js/main.8b2ae8f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f30a4ec4.css",
-    "static/js/main.5198155d.js"
+    "static/css/main.8bf94b12.css",
+    "static/js/main.8b2ae8f3.js"
   ]
 }
