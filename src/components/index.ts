@@ -1,4 +1,3 @@
-// export moovies components\
 export { default as Header } from "./header/Header";
 export { default as AllMovies } from "./moviesTvseries/AllMovies";
 export { default as ContextAll } from "./context/ContextAll";
