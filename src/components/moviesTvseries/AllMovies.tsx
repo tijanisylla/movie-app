@@ -23,6 +23,10 @@ const AllMovies: FC = () => {
           language: "en-US",
           page: currentPage,
           with_genres: withGenre,
+          // PG
+          // certification_country: "US",
+          // certification: "G",
+          // regions: "US",
         },
       });
 
@@ -39,6 +43,7 @@ const AllMovies: FC = () => {
     fetchMoviesAndTv((movie: any, tvSerie: any) => {
       setMovieData(movie.results);
       setTvSerieData(tvSerie.results);
+      console.log("movie.results ===========", movie.results);
     });
   }, [currentPage, withGenre, currentFilter]);
 
